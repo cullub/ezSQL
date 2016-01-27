@@ -179,7 +179,7 @@
 			$this->last_query = $query;
 
 			// Count how many queries there have been
-			$this->count(true, true);
+			$this->num_querys++;
 
 			// Use core file cache function
 			if ( $cache = $this->get_cache($query) )
